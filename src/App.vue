@@ -1,18 +1,10 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <SignupForm />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+<script lang="ts" setup>
+import SignupForm from '@/components/SignupForm.vue'
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-});
 </script>
 
 <style lang="scss">
@@ -23,5 +15,9 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body {
+  margin: 0;
+  background: #eee;
 }
 </style>
